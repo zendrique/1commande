@@ -6,7 +6,7 @@ CHOICE_HEIGHT=4
 BACKTITLE="AdminAdmin"
 TITLE="Menue"
 MENU="Que voulez-vous faire ?"
-SOURCE="/opt/admiadmin/modules"
+SOURCE="/opt/admiadmin/utils/clear.sh"
 
 OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"
@@ -23,10 +23,10 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            bash $SOURCE/lamp.sh
+            bash $SOURCE lamp.sh
             ;;
         2)
-            bash $SOURCE/lemp.sh
+            bash $SOURCE lemp.sh
             ;;
         3)
             echo "You chose Option 3"

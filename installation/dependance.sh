@@ -9,7 +9,7 @@ function depot {
 function installation {
     echo "Installation des logiciels...."
     apt update
-    apt install -y curl dialog
+    apt install -y curl dialog zip
 }
 
 #Fonction de démarrage du menue principale

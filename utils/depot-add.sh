@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Format 
+#bash depot-add.sh "logicil de signature" "depot" "commande de signature"
+
 echo "Dépôt :" $2
 echo "Logiciel de signature :" $1
 echo "Commande de signature :" $3
