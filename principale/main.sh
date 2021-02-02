@@ -3,10 +3,10 @@
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="AdminAdmin"
+BACKTITLE="1commande"
 TITLE="Menue"
 MENU="Que voulez-vous faire ?"
-SOURCE="/opt/admiadmin/utils/clear.sh"
+SOURCE="/opt/1commande/utils/clear.sh"
 
 OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"

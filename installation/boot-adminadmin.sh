@@ -1,8 +1,8 @@
 #!/bin/bash
-# Dossier de adminadmin et "opt" car c'est un programme externe aux dépôts debian.
+# Dossier de 1commande et "opt" car c'est un programme externe aux dépôts debian.
 cd /opt/
 apt update
-apt install -y git diff
-git clone https://github.com/zendrique/adminadmin
-bash adminadmin/detection.sh
+apt install -y git
+git clone https://github.com/zendrique/1commande
+bash 1commande/detection.sh
 exit

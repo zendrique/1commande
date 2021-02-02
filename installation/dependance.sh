@@ -14,7 +14,7 @@ function installation {
 
 #Fonction de démarrage du menue principale
 function {
-    alias adminadmin='bash /opt/adminadmin/main.sh'
+    alias adminadmin='bash /opt/1commande/principale/main.sh'
     bash /opt/adminadmin/main.sh
 }
 

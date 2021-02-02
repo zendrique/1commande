@@ -1,4 +1,7 @@
 #!/bin/bash
+
+source=/opt/1commande
+
 clear
 echo "Vérification de votre OS..."
 
@@ -17,10 +20,11 @@ function debian {
 	OS=(cat /etc/*-release | grep PRETTY__NAME)
 	if {
 		OS="Debian GNU/Linux 10 (buster)"
-		bash installation.sh --full-installation
+		bash $source/installation.sh --full-installation
 		break
 	}
-	else non-valide
+	else 
+	non-valide
 	break
 }
 

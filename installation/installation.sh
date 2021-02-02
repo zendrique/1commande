@@ -1,22 +1,24 @@
 #!/bin/bash
 
-source="/opt/adminadmin"
+source="/opt/1commande"
 
 function download {
     cd -R $source/updater
-    wget https://jesuisunlien.quelquechose/version.txt
+    wget https://download.zendrique.ml/1commande/version.txt
+    version=$(cat $source/updater/version.txt)
 }
 
 function create-updater {
     echo "Creation de l'updater..."
     download
     mv $source/updater/version.txt $source/updater/local-version.txt
+    localversion=$(cat $source/updater/local-version.txt)
 }
 
 function updater {
     echo "Vérification de mise à jour..."
     download
-    diff $source/updater/local-version.txt $source/updater/version.txt
+    if [ "$version" -eq "$localversion" ]
 
 }
 
@@ -26,7 +28,7 @@ function full-installation {
 }
 
 function installation {
-    bash dependance.sh
+    bash $source/installation/dependance.sh
 }
 
 #Détéction d'argument
