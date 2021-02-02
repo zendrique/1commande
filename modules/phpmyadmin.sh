@@ -8,4 +8,5 @@ rm phpmyadmin.zip
 mv phpmyadmin-* phpmyadmin
 chown www-data:www-data /var/www/html/ -R
 apt install php7.4-xml
+systemctl restart apache2
 exit
