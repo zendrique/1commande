@@ -10,7 +10,7 @@ SOURCE="/opt/1commande/utils/clear.sh"
 
 OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"
-         3 "Option 3")
+         3 "Docker")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -29,6 +29,6 @@ case $CHOICE in
             bash $SOURCE lemp.sh
             ;;
         3)
-            echo "You chose Option 3"
+            bash $source docker.sh
             ;;
 esac

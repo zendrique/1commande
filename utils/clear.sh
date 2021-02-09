@@ -1,4 +1,4 @@
 #!/bin/bash
 clear
-source=/opt/adminadmin/modules
+source=/opt/1commande/pack
 bash $source/$1

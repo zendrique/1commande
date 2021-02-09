@@ -25,3 +25,6 @@ Je vous signale que je ne suis pas résponssable en cas de non fonctionnement, o
 En cas de bug vous pouvez le signaler ici : https://github.com/zendrique/1commande/issues
 Vous pouvez églament contribuer au projet en ajoutant de nouvelle fonctionnaliter.
 Vous pouvez également le Forker tout en réepctant les termes de contrant de licence !
+
+#Documentation
+VOus pouvez tourvez toutes la documentation concrnant l'application à cette adresse : http://1commande.ml

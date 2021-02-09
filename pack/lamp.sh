@@ -5,7 +5,7 @@ back=/opt/1commande/utils
 
 echo "Note :"
 echo "Vous êtes sur le poin de mettre en place un serveur comprenant :"
-echo "- Ln serveur web (Apache2)"
+echo "- Le serveur web (Apache2)"
 echo "- Une base de donnée (mariadb)"
 echo "- Le langage de programmation php dans sa dérniére version stable"
 echo "Voulez-vous continuer ? (1 ou 2)"
