@@ -13,7 +13,7 @@ function installation {
 }
 
 #Fonction de démarrage du menue principale
-function {
+function start {
     alias 1commande='bash /opt/1commande/principale/main.sh'
     bash /opt/1commande/main.sh
 }

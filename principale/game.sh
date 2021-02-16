@@ -4,14 +4,14 @@ HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="1commande"
-TITLE="Menue"
+TITLE="Menue des jeux"
 MENU="Que voulez-vous faire ?"
 SOURCE="/opt/1commande/utils/clear.sh"
 
-OPTIONS=(1 "Serveur LAMP"
-         2 "Serveur LNMP"
-         3 "Docker"
-         4 "Sécuriser mon serveur")
+OPTIONS=(1 "Serveur Minecraft"
+         2 "Serveur"
+         3 "Serveur"
+         4 "Serveur")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \

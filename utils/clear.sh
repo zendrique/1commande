@@ -1,4 +1,4 @@
 #!/bin/bash
 clear
 source=/opt/1commande/pack
-bash $source/$1
+bash $source/$1.sh

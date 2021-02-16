@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source=/opt/1commande
+source="/opt/1commande"
 
 clear
 echo "Vérification de votre OS..."
@@ -9,7 +9,8 @@ echo "Vérification de votre OS..."
 
 function non-valide {
 	# Si la distribution renvoie autre chose alors fermeture du programme et indique l'OS compatible
-    echo "Votre OS n'est pas compatible"
+    clear
+	echo "Votre OS n'est pas compatible"
 	echo "OS compatible : "
 	echo "- Débian 10"
 	exit
@@ -21,11 +22,10 @@ function debian {
 	if {
 		OS="Debian GNU/Linux 10 (buster)"
 		bash $source/installation.sh --full-installation
-		break
 	}
 	else 
 	non-valide
-	break
+	fi
 }
 
 # Exectution de la detection
