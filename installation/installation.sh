@@ -20,7 +20,6 @@ function updater {
     echo "Vérification de mise à jour..."
     download
     if [ "$version" -eq "$localversion" ]
-
 }
 
 function full-installation {
