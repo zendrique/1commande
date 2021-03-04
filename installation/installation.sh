@@ -19,7 +19,9 @@ function create-updater {
 function updater {
     echo "Vérification de mise à jour..."
     download
-    if [ "$version" -eq "$localversion" ]
+    if [ "$version" -eq "$localversion" ]; then
+    bash $source/installation/updater.sh
+    fi
 }
 
 function full-installation {

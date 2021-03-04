@@ -9,13 +9,13 @@ function depot {
 function installation {
     echo "Installation des logiciels...."
     apt update
-    apt install -y curl dialog zip
+    apt install -y curl dialog zip unzip
 }
 
 #Fonction de démarrage du menue principale
 function start {
     alias 1commande='bash /opt/1commande/principale/main.sh'
-    bash /opt/1commande/main.sh
+    bash /opt/1commande/principale/main.sh
 }
 
 #Détéction d'argument
