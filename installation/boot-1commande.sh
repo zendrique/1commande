@@ -4,5 +4,5 @@ cd /opt/
 apt update
 apt install -y git
 git clone https://github.com/zendrique/1commande
-bash 1commande/detection.sh
+bash 1commande/installation/detection.sh
 exit

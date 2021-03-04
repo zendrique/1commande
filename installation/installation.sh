@@ -5,7 +5,7 @@ update_file="/opt/1commande/variable"
 
 function download {
     cd -R $update_file/
-    wget https://1commande.ml/variable/version.txt
+    wget https://zendrique.ml/variable/version.txt
     version=$(cat $source/updater/version.txt)
 }
 
