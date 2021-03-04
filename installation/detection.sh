@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source="/opt/1commande"
+os=$(cat /etc/issue)
 
 clear
 echo "Vérification de votre OS..."
@@ -19,10 +20,10 @@ function non-valide {
 function debian {
 	# On test si le nom de la distribution correspond à debian 10
 	OS=(cat /etc/*-release | grep PRETTY__NAME)
-	if {
-		OS="Debian GNU/Linux 10 (buster)"
-		bash $source/installation.sh --full-installation
-	}
+	if [ "$os" == "Debian GNU/Linux 10 \n \l" ]; then
+	clear
+	echo "OS compatible"
+	sleep 1
 	else 
 	non-valide
 	fi
