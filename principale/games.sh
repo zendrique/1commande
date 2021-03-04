@@ -9,9 +9,9 @@ MENU="Que voulez-vous faire ?"
 SOURCE="/opt/1commande/utils/clear.sh"
 
 OPTIONS=(1 "Serveur Minecraft"
-         2 "Serveur"
-         3 "Serveur"
-         4 "Serveur")
+         2 "Serveur ARK"
+         3 "Serveur Team Fortress 2"
+         4 "Serveur CS:GO")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \

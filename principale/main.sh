@@ -11,7 +11,8 @@ SOURCE="/opt/1commande/utils/clear.sh"
 OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"
          3 "Docker"
-         4 "Sécuriser mon serveur")
+         4 "Sécuriser mon serveur"
+         5 "Menue des jeux")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -34,5 +35,8 @@ case $CHOICE in
             ;;
         4)
             bash $source securisation
+            ;;
+        5) 
+            bash /opt/1commande/principale/games.sh
             ;;
 esac
