@@ -1,10 +1,14 @@
 
 ## ATTENTION
-## En cours de développement ne doit pas être utilisé pour le moment !!!!!!
+## En cours de développement ne doit pas être utilisé pour le moment !
 
 ## Introduction
 
-1commande, est un projet visant à aider les personnes qui débutes dans le domaine de l'administration de serveur VPS Linux.
+1commande, est un projet visant à aider les personnes qui débutes dans le domaine de l'administration de serveur VPS Linux en leurs proposant des solution d'installation completement automatiser commande par exemple :
+* L'installation de serveur LAMP ou LNMP
+* Installation de docker
+* Installation de serveur de jeu
+et bien plus encore
 
 ## Installation
 
