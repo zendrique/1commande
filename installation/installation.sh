@@ -33,6 +33,10 @@ function installation {
     bash $source/installation/dependance.sh
 }
 
+function alas {
+
+}
+
 #Détéction d'argument
 if [ "$1" -eq  "--full-installation" ]
    then
