@@ -7,8 +7,7 @@
 1commande, est un projet visant à aider les personnes qui débutes dans le domaine de l'administration de serveur VPS Linux en leurs proposant des solution d'installation completement automatiser commande par exemple :
 * L'installation de serveur LAMP ou LNMP
 * Installation de docker
-* Installation de serveur de jeu
-et bien plus encore
+* Installation de serveur de jeu et bien plus encore
 
 ## Installation
 
@@ -24,7 +23,7 @@ apt install -y wget sudo
 Une fois que tout les prérequi sont valider vous pouvez proceder à l'installation de 1commande.
 Pour çe faire vous devez coller la commande suivante dans votre terminale :
 ```
-sudo wget https://github.com/zendrique/1commande/ -O /home && bash /opt/boot-1commande.sh
+sudo wget https://github.com/zendrique/1commande/ -O /home/ && bash /opt/boot-1commande.sh
 ```
 
 ## Fonctionnement
@@ -52,4 +51,5 @@ Vous pouvez également contribuer au projet en ajoutant de nouvelle fonctionnali
 Vous pouvez également le Forker tout en respectant les termes du contrat de licence !
 
 ## Documentation
-Vous pouvez trouver toutes la documentation concernant l'application à cette adresse : http://1commande.ml
+
+Vous pouvez trouver toutes la documentation concernant 1commande à cette adresse : http://1commande.ml
