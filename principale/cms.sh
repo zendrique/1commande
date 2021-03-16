@@ -4,15 +4,12 @@ HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="1commande"
-TITLE="Menue"
-MENU="Que voulez-vous faire ?"
+TITLE="CMS"
+MENU="Que voulez-vous installer ?"
 SOURCE="/opt/1commande/utils/clear.sh"
 
-OPTIONS=(1 "Serveur LAMP"
-         2 "Serveur LNMP"
-         3 "Docker"
-         4 "Sécuriser mon serveur"
-         5 "Menue des jeux")
+OPTIONS=(1 "WordPress"
+         2 "NextCloud")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -29,14 +26,5 @@ case $CHOICE in
             ;;
         2)
             bash $SOURCE lemp
-            ;;
-        3)
-            bash $source docker
-            ;;
-        4)
-            bash $source securisation
-            ;;
-        5) 
-            bash /opt/1commande/principale/jeux.sh
             ;;
 esac

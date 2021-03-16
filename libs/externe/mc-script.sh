@@ -4,4 +4,6 @@
 #Script dédier à l'installation de serveur minecraft
 
 clear
-echo ""
+cd /opt
+git clone https://github.com/zendrique/mc-script
+bash 
