@@ -3,11 +3,11 @@
 clear
 lib=/opt/1commande/libs/interne/CreateurDB.sh
 
-echo "Téléchargement et installation de WordPress..."
+echo "Téléchargement et installation de NextCloud..."
 cd /var/www/
-curl -O https://fr.wordpress.org/latest-fr_FR.zip
-unzip latest-fr_FR.zip
-mv wordpress html
+curl -O https://download.nextcloud.com/server/releases/nextcloud-21.0.0.zip
+unzip nextcloud-21.0.0.zip
+mv nextcloud html
 chown www-data:www-data /var/www/html/ -R
 clear
 

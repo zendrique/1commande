@@ -12,7 +12,8 @@ OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"
          3 "Docker"
          4 "Sécuriser mon serveur"
-         5 "Menue des jeux")
+         5 "Menue des jeux"
+         6 "Menue des CMS")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -38,5 +39,8 @@ case $CHOICE in
             ;;
         5) 
             bash /opt/1commande/principale/jeux.sh
+            ;;
+        6)  
+            bash /opt/1commande/principale/cms.sh
             ;;
 esac
