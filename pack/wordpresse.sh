@@ -4,6 +4,7 @@ source=/opt/1commande/modules
 back=/opt/1commande/utils
 pack=/opt/1commande/pack
 db=/opt/1commande/temp
+lib=/opt/1commande/libs/
 
 echo "Note :"
 echo "Vous êtes sur le poin de mettre en place un serveur comprenant :"
@@ -24,16 +25,18 @@ done
 # Execution du pack d'installation LAMP
 bash $pack/lamp.sh
 
-# Installation de WordPress
-bash $source/wordpress.sh
+# Installation de WordPresse
+bash $source/wordpresse.sh
 
-# Chargement des information de la base de donnée
-utilisateur=$(cat $db/utilisateur.txt)
-nom=$(cat $db/nom.txt)
-mdp=$(cat $db/mdp.txt)
+# Création de la bse de donées
+echo "Comment voulez-vous nomer votre bde de donées ?"
+read nom
+echo "Comment voulez-vous nomer l'utilisateur de la base de données ?"
+read utilisateur
+echo "Quel mot de passe voulez-vous mettre pour la base de donées"
+read mdp
 
-# Supression des fichiers d'information
-rm -r $dp
+bash $libs/createurDB.sh $nom $utilisateur $mdp
 
 clear
 echo "Installation éffectuer avec succet !"

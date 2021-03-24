@@ -1,7 +1,6 @@
 #!/bin/bash
 
 clear
-lib=/opt/1commande/libs/interne/CreateurDB.sh
 
 echo "Téléchargement et installation de WordPress..."
 cd /var/www/
