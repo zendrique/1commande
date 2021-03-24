@@ -3,7 +3,7 @@
 cd /opt/
 apt update
 apt install -y git
-git clone https://github.com/zendrique/1commande
-rm /home/boot-1commande.sh
-bash 1commande/installation/detection.sh
+sudo git clone https://github.com/zendrique/1commande
+sudo rm /home/boot-1commande.sh
+sudo bash 1commande/installation/detection.sh
 exit

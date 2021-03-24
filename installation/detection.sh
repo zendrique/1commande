@@ -10,7 +10,7 @@ echo "Vérification de votre OS..."
 
 function non-valide {
 	# Si la distribution renvoie autre chose alors fermeture du programme et indique l'OS compatible
-	bash $source/installation/nettoyage.sh
+	sudo bash $source/installation/nettoyage.sh
     clear
 	echo "Votre OS n'est pas compatible"
 	echo "OS compatible : "
@@ -23,7 +23,7 @@ if [ "$os" == "Debian GNU/Linux 10 \n \l" ]; then
 clear
 echo "OS compatible"
 sleep 1
-bash $source/installation/installation.sh --full-installation
+sudo bash $source/installation/installation.sh --full-installation
 else 
 non-valide
 fi

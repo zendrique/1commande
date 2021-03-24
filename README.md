@@ -23,7 +23,7 @@ apt install -y wget sudo
 Une fois que tout les prérequi sont valider vous pouvez proceder à l'installation de 1commande.
 Pour çe faire vous devez coller la commande suivante dans votre terminale :
 ```
-sudo wget https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh -O /home/ && bash /opt/boot-1commande.sh
+sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh  && bash /home/boot-1commande.sh
 ```
 
 ## Fonctionnement
