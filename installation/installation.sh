@@ -4,15 +4,17 @@ source="/opt/1commande"
 update_file="/opt/1commande/variable"
 
 function download {
-    cd -R $update_file/
-    sudo wget https://zendrique.ml/variable/version.txt
+    cd $source
+    mkdri variable
+    cd $update_file/
+    wget https://zendrique.ml/variable/version.txt
     version=$(cat $source/updater/version.txt)
 }
 
 function create-updater {
     echo "Creation de l'updater..."
     download
-    sudo mv $update_file/version.txt $update_file/local-version.txt
+    mv $update_file/version.txt $update_file/local-version.txt
     localversion=$(cat $source/updater/local-version.txt)
 }
 
@@ -20,17 +22,17 @@ function updater {
     echo "Vérification de mise à jour..."
     download
     if [ "$version" -eq "$localversion" ]; then
-    sudo bash $source/installation/updater.sh
+    bash $source/installation/updater.sh
     fi
 }
 
 function full-installation {
     echo "Installation des logicieles"
-    sudo bash dependance.sh --install-depot
+    bash dependance.sh --install-depot
 }
 
 function installation {
-    sudo bash $source/installation/dependance.sh
+    bash $source/installation/dependance.sh
 }
 
 function alias {
