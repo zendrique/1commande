@@ -22,7 +22,7 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            bash $SOURCE lamp
+            bash $SOURCE wordpress
             ;;
         2)
             bash $SOURCE lemp

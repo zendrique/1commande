@@ -12,8 +12,8 @@ OPTIONS=(1 "Serveur LAMP"
          2 "Serveur LNMP"
          3 "Docker"
          4 "Sécuriser mon serveur"
-         5 "Menue des jeux"
-         6 "Menue des CMS")
+         5 "jeux"
+         6 "CMS")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \

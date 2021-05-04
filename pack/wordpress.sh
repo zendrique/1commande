@@ -26,7 +26,7 @@ done
 bash $pack/lamp.sh
 
 # Installation de WordPresse
-bash $source/wordpresse.sh
+bash $source/wordpress.sh
 
 # Création de la bse de donées
 echo "Comment voulez-vous nomer votre bde de donées ?"
