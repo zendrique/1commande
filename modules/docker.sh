@@ -4,15 +4,13 @@ hyperviseur=$(systemd-detect-virt)
 
 function erreur {
     clear
-    echo "La vritualisation de votre VPS de prend pas en charge Docker"
+    echo "La vritualisation de votre système ne prend pas en charge Docker"
 }
 
 #Détection de l'hyperviseur
 if [ "$hyperviseur" -eq "lxc"]; then
     erreur
 else [ "$hyperviseur" -eq "lxc-libvirt"]; then
-    erreur
-else [ "$hyperviseur" -eq "systemd-nspawn"]; then
     erreur
 else [ "$hyperviseur" -eq "systemd-nspawn"]; then
     erreur
