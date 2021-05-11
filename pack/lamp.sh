@@ -2,7 +2,7 @@
 
 source=/opt/1commande/modules
 back=/opt/1commande/utils
-
+clear
 echo "Note :"
 echo "Vous êtes sur le poin de mettre en place un serveur comprenant :"
 echo "- Le serveur web (Apache2)"

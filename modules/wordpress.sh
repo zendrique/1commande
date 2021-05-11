@@ -11,9 +11,3 @@ rm -r html
 mv wordpress html
 chown www-data:www-data /var/www/html/ -R
 clear
-
-mkdir /opt/1commande/temp
-cd /opt/1commande/temp
-echo $utilisateur >> utilisateur.txt
-echo $nom >> nom.txt
-echo $mdp >> mdp.txt
