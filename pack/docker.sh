@@ -15,21 +15,17 @@ select confirmation in "Oui" "Non"; do
     esac
 done
 
+#Installation de Docker
+bash $source/docker.sh
+
+clear
 echo "Voulez-vous églament installer docker-compose ? (1 ou 2)"
 select dockercompose in "Oui" "Non"; do
     case $dockercompose in
-        Oui ) break;;
+        Oui ) bash $source/docker-compose.sh break;;
         Non ) break;;
     esac
 done
-
-#Installation de Docker
-bash $source/docker.sh
-#Installation de Docker-compose
-if [[ "$dockercompose" ==  "Oui" ]]
-then
-  bash $source/docker-compose.sh
-fi
 
 clear
 echo "Installation éffectuer avec succet !"
