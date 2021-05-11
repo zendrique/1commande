@@ -25,6 +25,6 @@ case $CHOICE in
             bash $SOURCE wordpress
             ;;
         2)
-            bash $SOURCE lemp
+            bash $SOURCE nextcloud
             ;;
 esac
