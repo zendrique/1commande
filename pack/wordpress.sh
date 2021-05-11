@@ -29,7 +29,7 @@ bash $pack/lamp.sh
 bash $source/wordpress.sh
 
 # Création de la bse de donées
-echo "Comment voulez-vous nomer votre bde de donées ?"
+echo "Comment voulez-vous nomer votre de de donées ?"
 read nom
 echo "Comment voulez-vous nomer l'utilisateur de la base de données ?"
 read utilisateur

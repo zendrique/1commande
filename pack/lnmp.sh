@@ -15,13 +15,6 @@ select confirmation in "Oui" "Non"; do
         Non ) bash $back/annulation.sh; exit;;
     esac
 done
-echo "Voulez-vous installer PhpMyAdmin ? (1 ou 2)"
-select PhpMyAdmin in "Oui" "Non"; do
-    case $PhpMyAdmin in
-        Oui ) break;;
-        Non ) break;;
-    esac
-done
 clear
 echo "Installation..."
 
@@ -31,11 +24,6 @@ bash $source/ngnx.sh
 bash $source/php-ngnx.sh
 #Installation de maridb
 bash $source/mariadb.sh
-#Installation de phpmyadmin
-if [[ "$PhpMyAdmin" ==  "Oui" ]]
-then
-  bash $source/phpmyadmin.sh
-fi
 clear
 echo "Installation éffectuer avec succet !"
 exit
