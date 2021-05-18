@@ -1,4 +1,9 @@
 #!/bin/bash
 
-rm -R /opt/1commande
-rm /home/boot-1commande.sh
+source="/opt/1commande"
+
+echo "Supression des fichiers..."
+cd $source
+rm -r installation/ libs/ modules/ pack/ princpiale/ utils/
+rm LICENSE README.mkdri
+rm -f /usr/bin/1commande

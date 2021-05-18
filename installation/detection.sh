@@ -19,7 +19,7 @@ function non-valide {
 }
 
 # On test si le nom de la distribution correspond à debian 10
-if [ "$os" == "Debian GNU/Linux 10 \n \l" ]; then
+if [ "$os" -eq "Debian GNU/Linux 10 \n \l" ]; then
 clear
 echo "OS compatible"
 sleep 1

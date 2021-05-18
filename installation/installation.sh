@@ -35,18 +35,20 @@ function installation {
     bash $source/installation/dependance.sh
 }
 
-function alias {
-    echo "Création d'un alias"
+function commande {
+    mv $source/installation/1commande /usr/bin/
+    chmod +x $source/installation/1commande
 }
 
 #Détéction d'argument
 if [ "$1" -eq  "--full-installation" ]
    then
     create-updater
-    alias
     full-installation
+    commande
 else
     updater
     installation
+    commande
  fi
  exit
