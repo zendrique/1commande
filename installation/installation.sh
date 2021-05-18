@@ -4,8 +4,6 @@ source="/opt/1commande"
 update_file="/opt/1commande/variable"
 
 function download {
-    cd $source
-    mkdri variable
     cd $update_file/
     wget https://zendrique.ml/variable/version.txt
     version=$(cat $source/updater/version.txt)
