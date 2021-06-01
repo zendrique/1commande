@@ -49,4 +49,4 @@ else
     installation
     commande
  fi
- exit
+ exit 0
