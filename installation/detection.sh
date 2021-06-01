@@ -20,12 +20,12 @@ function non-valide {
 
 # On test si le nom de la distribution correspond à debian 10
 if [ "$os" -eq "Debian GNU/Linux 10 \n \l" ]; then
-clear
-echo "OS compatible"
-sleep 1
-bash $source/installation/installation.sh --full-installation
+	clear
+	echo "OS compatible"
+	sleep 1
+	bash $source/installation/installation.sh --full-installation
 else 
-non-valide
+	non-valide
 fi
 
 exit 0
