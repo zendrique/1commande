@@ -9,7 +9,7 @@ echo "Vérification de votre OS..."
 #Déclaration des fonction
 
 function non-valide {
-	# Si la distribution renvoie autre chose alors fermeture du programme et indique l'OS compatible
+	# Si la distribution renvoie autre chose alors fermeture du programme et indique l'OS compatible et supression de 1commandes
 	bash $source/installation/nettoyage.sh --remove
     clear
 	echo "Votre OS n'est pas compatible"
@@ -19,7 +19,7 @@ function non-valide {
 }
 
 # On test si le nom de la distribution correspond à debian 10
-if [ "$os" -eq "Debian GNU/Linux \n \l" ]; then
+if [ "$os" -eq "Debian GNU/Linux 10 \n \l" ]; then
 clear
 echo "OS compatible"
 sleep 1
