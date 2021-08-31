@@ -15,15 +15,22 @@ Pour installer 1commande vous devez vous assurer des que vous disposez des prér
 1. Vous devez utiliser Debian 10
 2. Vous devez vous assurez que vous exécuter une une insatence de Debian fraichement installer
 3. Vous devez vous assurer que vous disposer des commande suivante : wget et sudo si ce n'est pas le cas vous devez les installer pour se faire :
-```
+```bash
 apt update
 apt upgrade
 apt install -y wget sudo
 ```
 Une fois que tout les prérequi sont valider vous pouvez proceder à l'installation de 1commande.
 Pour çe faire vous devez coller la commande suivante dans votre terminale :
-```
+```bash
 sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh  && bash /home/boot-1commande.sh
+```
+
+## Argument
+Vous pouvez exectuer 1commandeà partir d'un autre systéme que Debian 10 mais aucun support ne sera fournie.
+Pour ce faire, vous devez ajouter l'argument ```--ignor``` lors de l'installation se qui donne :
+```bash
+sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh  && bash /home/boot-1commande.sh --ignor
 ```
 
 ## Fonctionnement

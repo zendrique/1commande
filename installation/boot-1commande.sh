@@ -5,5 +5,8 @@ apt update
 apt install -y git
 sudo git clone https://github.com/zendrique/1commande
 sudo rm /home/boot-1commande.sh
-sudo bash 1commande/installation/detection.sh
-exit
+if ($1 == "--ignor") ; then
+    sudo bash 1commande/installation/installation.sh --full-installation
+else
+    sudo bash 1commande/installation/detection.sh
+exit 0
