@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$EUID" -ne 0 ]; then 
-    echo "[!] Veuillez lancer 1commande en root (via sudo)"
+    echo "[!] Veuillez lancer 1commande en root (ou via sudo)"
     exit
 fi
 
