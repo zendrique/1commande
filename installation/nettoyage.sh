@@ -6,13 +6,14 @@ function update {
     echo "Supression des fichiers..."
     cd $source
     rm -r installation/ libs/ modules/ pack/ princpiale/ utils/
-    rm LICENSE README.mkdri
+    rm LICENSE README.md
     rm -f /usr/bin/1commande
 }
 
 function remove {
     cd /opt
     rm -r 1commande
+    rm -f /usr/bin/1commande
 
 }
 

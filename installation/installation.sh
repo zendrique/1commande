@@ -11,6 +11,7 @@ function download {
 
 function create-updater {
     echo "Creation de l'updater..."
+    mkdri $source/variable
     download
     mv $update_file/version.txt $update_file/local-version.txt
     localversion=$(cat $source/updater/local-version.txt)

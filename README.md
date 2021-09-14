@@ -17,7 +17,6 @@ Pour installer 1commande vous devez vous assurer des que vous disposez des prér
 3. Vous devez vous assurer que vous disposer des commande suivante : wget et sudo si ce n'est pas le cas vous devez les installer pour se faire :
 ```bash
 apt update
-apt upgrade
 apt install -y wget sudo
 ```
 Une fois que tout les prérequi sont valider vous pouvez proceder à l'installation de 1commande.

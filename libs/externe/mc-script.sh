@@ -6,4 +6,5 @@
 clear
 cd /opt
 git clone https://github.com/zendrique/mc-script
-bash 
+cd mc-script
+bash boot-mc-script.sh
