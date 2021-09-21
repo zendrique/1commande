@@ -4,7 +4,6 @@ DIALOG_CANCEL=1
 DIALOG_ESC=255
 HEIGHT=0
 WIDTH=0
-
 display_result() {
   dialog --title "$1" \
     --no-collapse \
@@ -22,10 +21,11 @@ while true; do
     "1" "Serveur LAMP" \
     "2" "Serveur LNMP" \
     "3" "Docker" \
-    "4" "Sécuriser mon serveur" \
-    "5" "Menue des jeux" \
-    "6" "Menue des CMS" \
-    "7" "Mettre à jour de 1Commande" \
+    "4" "Backup" \
+    "5" "Sécuriser mon serveur" \
+    "6" "Menue des jeux" \
+    "7" "Menue des CMS" \
+    "8" "Mettre à jour de 1Commande" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -56,15 +56,17 @@ while true; do
       bash $source docker
       ;;
     4 )
+      bash /opt/1commande/modules/Backup.sh
+    5 )
       bash $source securisation
       ;;
-    5 )
+    6 )
       bash /opt/1commande/principale/jeux.sh
       ;;
-    6 )
+    7 )
       bash /opt/1commande/principale/cms.sh
       ;;
-    7 )
+    8 )
       bash /opt/1commande/installation/updater.sh
       ;;
   esac
