@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source="/opt/1commade/clear.sh"
 DIALOG_CANCEL=1
 DIALOG_ESC=255
 HEIGHT=0
@@ -57,6 +58,7 @@ while true; do
       ;;
     4 )
       bash /opt/1commande/modules/Backup.sh
+      ;;
     5 )
       bash $source securisation
       ;;
