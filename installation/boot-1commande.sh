@@ -5,7 +5,7 @@ apt update
 apt install -y git
 sudo git clone https://github.com/zendrique/1commande
 sudo rm /home/boot-1commande.sh
-if [ "$1" = "--ignor" ]; then
+if [ "$1" = "--igniore" ]; then
     sudo bash 1commande/installation/installation.sh --full-installation
 else
     sudo bash 1commande/installation/detection.sh

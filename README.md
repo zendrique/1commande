@@ -27,9 +27,9 @@ sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.
 
 ## Argument
 Vous pouvez exectuer 1commandeà partir d'un autre systéme que Debian 11 mais aucun support ne sera fournie.
-Pour ce faire, vous devez ajouter l'argument ```--ignor``` lors de l'installation se qui donne :
+Pour ce faire, vous devez ajouter l'argument ```--igniore``` lors de l'installation se qui donne :
 ```bash
-sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh && bash /home/boot-1commande.sh --ignor
+sudo wget -P /home/ https://github.com/zendrique/1commande/releases/download/v0.0.1/boot-1commande.sh && bash /home/boot-1commande.sh --igniore
 ```
 
 ## Fonctionnement
