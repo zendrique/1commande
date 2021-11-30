@@ -26,7 +26,8 @@ while true; do
     "5" "Sécuriser mon serveur" \
     "6" "Menue des jeux" \
     "7" "Menue des CMS" \
-    "8" "Mettre à jour de 1Commande" \
+    "8" "Mise à jour du ststéme" \
+    "9" "Mettre à jour de 1Commande" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -69,6 +70,9 @@ while true; do
       bash /opt/1commande/principale/cms.sh
       ;;
     8 )
+      bash /opt/1commande/modules/systeme-update.sh
+      ;; 
+    9 )
       bash /opt/1commande/installation/updater.sh
       ;;
   esac
