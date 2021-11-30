@@ -2,7 +2,7 @@
 
 clear
 apt update
-apt full-upgrade -y
+apt upgrade -y
 
 clear
 echo "Mise à jour du système effectuer "
