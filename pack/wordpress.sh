@@ -36,11 +36,11 @@ read utilisateur
 echo "Quel mot de passe voulez-vous mettre pour la base de donées"
 read mdp
 
-bash $libs/createurDB.sh $nom $utilisateur $mdp
+bash $libs/interne/createurDB.sh $nom $utilisateur $mdp
 
 clear
 echo "Installation éffectuer avec succet !"
-echo "Information base données à renseigner dans WordPress lors de la connection à la base de données"
+echo "Information de la base de données à renseigner dans WordPress lors de la connection à la base de données"
 echo "Host : 127.0.0.1"
 echo "Nom de la base de donnée :" $nom
 echo "Utilisateur de la base de donnée :" $utilisateur

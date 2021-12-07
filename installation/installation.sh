@@ -13,7 +13,7 @@ function installation {
 
 function commande {
     mv $source/installation/1commande /usr/bin/
-    chmod +x $source/installation/1commande
+    chmod +x /usr/bin/1commande
 }
 
 function update {

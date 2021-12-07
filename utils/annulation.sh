@@ -10,17 +10,19 @@ function quite {
     clear
     echo "1comande à été fermer avec succet !"
     echo "Pour le démarrer de nouveau éxéctuer la commande : '1commande'"
+    exit 0
 }
 
 function menue {
     bash $main
+    exit 0
 }
 
-echo "Que voulez-vous fair ? (1 ou 2)"
-select choix in "Oui" "Non"; do
+echo "Que voulez-vous faire ? (1 ou 2)"
+select choix in "Quiter" "Menue princiaple"; do
     case $choix in
         Quiter ) quite break;;
-        Menue princiaple ) bash menue break;;
+        Menue princiaple ) menue break;;
     esac
 done
-exit
+exit 0

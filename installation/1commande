@@ -5,5 +5,5 @@ if [ "$EUID" -ne 0 ]; then
     exit
 fi
 
-bash /opt/1commande/princpiale/main.sh
+bash /opt/1commande/principale/main.sh
 exit 0

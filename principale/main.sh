@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source="/opt/1commade/clear.sh"
+source="/opt/1commande/utils/clear.sh"
 DIALOG_CANCEL=1
 DIALOG_ESC=255
 HEIGHT=0
@@ -50,30 +50,39 @@ while true; do
       ;;
     1 )
       bash $SOURCE lamp
+      exit 0
       ;;
     2 )
       bash $SOURCE lemp
+      exit 0
       ;;
     3 )
       bash $source docker
+      exit 0
       ;;
     4 )
       bash /opt/1commande/modules/Backup.sh
+      exit 0
       ;;
     5 )
       bash $source securisation
+      exit 0
       ;;
     6 )
       bash /opt/1commande/principale/jeux.sh
+      exit 0
       ;;
     7 )
       bash /opt/1commande/principale/cms.sh
+      exit 0
       ;;
     8 )
       bash /opt/1commande/modules/systeme-update.sh
+      exit 0
       ;; 
     9 )
       bash /opt/1commande/installation/updater.sh
+      exit 0
       ;;
   esac
 done
