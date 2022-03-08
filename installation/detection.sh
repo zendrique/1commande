@@ -23,6 +23,7 @@ if [ "$os" = "Debian GNU/Linux 11 \n \l" ]; then
 	clear
     echo "OS compatible"
 	sleep 1
+	bash $lsource/installation/licence-manager.sh
 	bash $source/installation/installation.sh --full-installation
 
 else

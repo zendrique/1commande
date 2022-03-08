@@ -58,4 +58,4 @@ Vous pouvez également le Forker tout en respectant les termes du contrat de lic
 
 ## Documentation
 
-Vous pouvez trouver toutes la documentation concernant 1commande à cette adresse : https://docs.1commande.ml
+Vous pouvez trouver toutes une documentation FR concernant 1commande à cette adresse : https://docs.1commande.ml et une documentation Anglaise à cette adresse : https://docs-en.1commande.ml
